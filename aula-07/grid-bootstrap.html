@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Loja</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img width="70px"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/768px-Dell_Logo.svg.png"
+          alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Produtos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="d-flex ">
+    <aside class="p-4 shadow me-2">
+      <div class="border-bottom border-dark pb-4 mb-4">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+
+      <div class="border-bottom border-dark pb-4 mb-4">
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <option selected>Ordenar Por</option>
+          <option value="1">Preço</option>
+          <option value="2">Novo</option>
+          <option value="3">Popular</option>
+        </select>
+      </div>
+
+      <div class="border-bottom border-dark pb-4 mb-4">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Meus itens
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Carrinho</a></li>
+            <li><a class="dropdown-item" href="#">Favoritos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Todos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-bottom border-dark pb-4 mb-4">
+        <h1 class="fs-3">Gênero</h1>
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input id="masculino" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <label for="masculino" class="form-control">Masculino</label>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-text">
+            <input id="feminino" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+          </div>
+          <label for="feminino" class="form-control">Feminino</label>
+        </div>
+      </div>
+
+      <div class="border-bottom border-dark pb-4 mb-4">
+        <label for="customRange2" class="form-label">Preço</label>
+        <div class="d-flex">
+          <span>$</span>
+          <input type="range" class="form-range px-2" min="100" max="10000" step="10" id="customRange2">
+          <span>$$$</span>
+        </div>
+        
+      </div>
+    </aside>
+  
+    <section class="catalog mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://images.tcdn.com.br/img/img_prod/740836/notebook_dell_inspiron_3501_core_i7_1165g7_memoria_8gb_ssd_256gb_tela_hd_15_6_windows_10_home_mint_12385_1_aae0e1d502546eb1a9ddabce6301f63e.png">
+              <div class="card-body">
+                <h5 class="card-title">DELL Notebook Inspiron i15</h5>
+                <p class="card-text">11ª geração de Intel Core i5-1135G7 4-core, cache de 8MB, até 4.2GHz</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 3.399,99</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://m.media-amazon.com/images/I/61L8G0qcBDL._AC_SL1000_.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Notebook Dell Inspiron i15</h5>
+                <p class="card-text">Processador: Intel Core i7-1165G7 (2.8GHz até 4.7GHz, cache de 12MB, 11ª geração)</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 4.399,99</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://m.media-amazon.com/images/I/71epkJC5SxL._AC_SL1000_.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Notebook Dell Inspiron i15</h5>
+                <p class="card-text">Full HD Intel Pentium Gold 4GB 128GB SSD Windows 11 Preto</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 2.149,00</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://www.ecommerceresponsivo.com.br/padrao/164-large_default/notebook-dell-inspiron-14r-5437-a40-com-intel-core-i7-8gb-2gb-de-memoria-dedicada-1tb-led-14-windows-8.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Notebook Dell Inspiron 14R</h5>
+                <p class="card-text">437-A40 com Intel Core i7 8GB (2GB de Memória Dedicada) 1TB LED 14" Windows 8</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 3.299,00</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwSSP94pSyiTKOhPuh2AdUwOBEOwYGeBji-g&usqp=CAU">
+              <div class="card-body">
+                <h5 class="card-title">Notebook gamer Dell G15</h5>
+                <p class="card-text">Em até 10x sem juros de R$ 499,70 Valor total a prazo R$ 4.997,00</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 4.997,00</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" alt="Notebook"
+                src="https://d30u9wim1barf6.cloudfront.net/Custom/Content/Products/98/75/987512_notebook-dell-inspiron-5480-14-fhd-i7-8565u-1tbplus128gb-ssd-16gb-nvidia-2gb-win10-h-vermelhonac006557_m1_637152874250610167.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Notebook Dell Inspiron 5480 14</h5>
+                <p class="card-text">FHD i7-8565U 1TB+128GB SSD 16GB Nvidia 2GB Win10 H</p>
+                <a href="#" class="btn btn-primary">Comprar R$ 4.690,00</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="w-100 d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

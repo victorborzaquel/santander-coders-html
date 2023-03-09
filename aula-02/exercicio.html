@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 02 - Exercício 01</title>
+</head>
+
+<style>
+  label {
+    margin-left: 15px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+  }
+
+  thead {
+    background-color: rgb(181, 181, 181);
+  }
+
+  ol {
+    margin: 0;
+  }
+
+  li,
+  .input-div {
+    padding-bottom: 5px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<body>
+  <div>
+    <ol>
+      <li>Leite</li>
+      <li>Ovos</li>
+      <li>Pão</li>
+      <li>Cereais</li>
+      <li>Frutas</li>
+    </ol>
+  </div>
+
+  <div>
+    <ul>
+      <li class="input-div">
+        <input type="checkbox" name="compras" id="compras">
+        <label for="compras">Fazer Compras</label>
+      </li>
+      <li class="input-div">
+        <input type="checkbox" name="exercicios" id="exercicios">
+        <label for="exercicios">Fazer Exercícios</label>
+      </li>
+      <li class="input-div">
+        <input type="checkbox" name="livros" id="livros">
+        <label for="livros">Ler Livros</label>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Nome Completo</th>
+          <th rowspan="2">Idade</th>
+          <th rowspan="2">País</th>
+          <th colspan="2">Quantidade de Filhos</th>
+        </tr>
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Menino</th>
+          <th>Menina</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João</td>
+          <td>Victor</td>
+          <td>25</td>
+          <td>Brasil</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Joel</td>
+          <td>Smith</td>
+          <td>30</td>
+          <td>Estados Unidos</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Pedro</td>
+          <td>Henrique</td>
+          <td>40</td>
+          <td>Portugal</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
